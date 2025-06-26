@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NomNom Pizzeria</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">NomNom <span>Pizzeria</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="#about">About</a>
+      <a href="#events">Events</a>
+      <a href="#reservation">Reservation</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>It’s Not Just A Pizza,<br><span>An Experience</span></h1>
+      <p>We serve more than just food — we serve joy, connection, and community in every slice.</p>
+      <a href="menu.html" class="btn">Order Now</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="two-column">
+    <img src="pictures/p1.jpg" alt="About Us">
+    <div>
+      <h2 class="section-title">About Us</h2>
+      <p>At NomNom Pizzeria— we craft edible happiness, one slice at a time. From our hand-stretched dough to our secret-recipe sauce, every bite is loaded with love, flavor, and that crispy-cheesy magic that keeps you coming back for more.</p>
+      <p>Born from late-night cravings and a passion for perfection, we’re more than just a pizza joint — we’re your neighborhood’s go-to for good vibes, great food, and unforgettable slices.</p>
+      <p>Hot. Fresh. Legendary. That’s how we roll. 🍕</p>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section id="events">
+    <h2 class="section-title">Events & Offers</h2>
+    <ul class="events-list">
+      <li>🎤 Karaoke Night</li>
+      <li>🎶 Live Music</li>
+      <li>🍕 30% Off Wednesdays</li>
+      <li>🥳 Buy 1 Get 1 Free Fridays</li>
+    </ul>
+    <img src="pictures/mic.png" alt="Events Image" class="event-img" />
+  </section>
+
+  <!-- Reservation -->
+  <section id="reservation">
+    <h2 class="section-title">Book a Table (Reservation) </h2>
+    <div class="two-column">
+      <form id="reservation-form">
+        <input type="text" placeholder="Name" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <label for="seats">Book a table for:</label>
+        <select id="seats" required>
+          <option value="1">1 Person</option>
+          <option value="2">2 People</option>
+          <option value="3">3 People</option>
+          <option value="4">4 People</option>
+          <option value="5">5 People</option>
+          <option value="6">6+ People</option>
+        </select>
+        <button type="submit" class="btn">Reserve</button>
+        <p id="confirmation-message"></p>
+      </form>
+      <img src="pictures/table.jpg" alt="Table Image" />
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p>Email: <a href="mailto:hello@nomnompizzeria.com">hello@nomnompizzeria.com</a></p>
+    <p>Phone: +977-1234567890</p>
+    <p>Address: 34 Park Road, Barrackpore</p>
+    <p>         Kolkata: 700120</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

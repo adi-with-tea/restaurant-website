@@ -1,0 +1,186 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background-color: #000;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #FFD700;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #FFD700;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #FFD700;
+}
+
+.hero {
+  background: url('bg.jpg') center center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+  position: relative;
+  background-attachment: scroll;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero span {
+  color: orange;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 1rem auto 2rem;
+}
+
+.btn {
+  background: #FFD700;
+  color: black;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #ffc107;
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  text-align: left;
+}
+
+#about img {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+}
+
+#reservation form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+#reservation input,
+#reservation select {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#reservation button {
+  background-color: #FFD700;
+  border: none;
+  padding: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+#reservation button:hover {
+  background-color: #ffc107;
+}
+
+#reservation img {
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+}
+
+.events ul {
+  list-style: none;
+  padding: 0;
+}
+
+.events ul li {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border-left: 4px solid #FFD700;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #FFD700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.events img {
+  max-width: 300px;
+  margin-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+}
+
+#contact a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+#confirmation-message {
+  color: #FFD700;
+  font-weight: bold;
+  margin-top: 1rem;
+}

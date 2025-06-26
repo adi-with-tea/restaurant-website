@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu - Charlestown</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+    <h1>Our Pizza Menu</h1>
+    <div class="menu-section">
+
+      <!-- Pizzas -->
+      <div class="menu-card">
+        <div class="menu-info">
+          <h2>Margherita</h2>
+          <p>Fresh tomatoes, mozzarella cheese, basil</p>
+          <p class="calories">~ 250 kcal</p>
+          <div class="order-controls">
+            <button onclick="changeQty(this, -1)">-</button>
+            <span class="quantity">0</span>
+            <button onclick="changeQty(this, 1)">+</button>
+          </div>
+          <span class="price">₹ 199</span>
+          <button class="order-btn" onclick="highlightOrder(this)">Order</button>
+        </div>
+        <img src="pictures/margherita.jpg" alt="Margherita" />
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-info">
+          <h2>Pepperoni</h2>
+          <p>Pepperoni, mozzarella, tomato sauce</p>
+          <p class="calories">~ 320 kcal</p>
+          <div class="order-controls">
+            <button onclick="changeQty(this, -1)">-</button>
+            <span class="quantity">0</span>
+            <button onclick="changeQty(this, 1)">+</button>
+          </div>
+          <span class="price">₹ 249</span>
+          <button class="order-btn" onclick="highlightOrder(this)">Order</button>
+        </div>
+        <img src="pictures/pepperoni.jpg" alt="Pepperoni" />
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-info">
+          <h2>Paneer Tikka</h2>
+          <p>Grilled paneer, onions, capsicum, spices</p>
+          <p class="calories">~ 300 kcal</p>
+          <div class="order-controls">
+            <button onclick="changeQty(this, -1)">-</button>
+            <span class="quantity">0</span>
+            <button onclick="changeQty(this, 1)">+</button>
+          </div>
+          <span class="price">₹ 239</span>
+          <button class="order-btn" onclick="highlightOrder(this)">Order</button>
+        </div>
+        <img src="pictures/paneer tikka.jpg" alt="Paneer Tikka" />
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-info">
+          <h2>4 Cheese</h2>
+          <p>Cheddar, mozzarella, parmesan, gouda</p>
+          <p class="calories">~ 350 kcal</p>
+          <div class="order-controls">
+            <button onclick="changeQty(this, -1)">-</button>
+            <span class="quantity">0</span>
+            <button onclick="changeQty(this, 1)">+</button>
+          </div>
+          <span class="price">₹ 299</span>
+          <button class="order-btn" onclick="highlightOrder(this)">Order</button>
+        </div>
+        <img src="pictures/4 cheese.jpg" alt="4 Cheese" />
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-info">
+          <h2>BBQ Chicken</h2>
+          <p>Grilled chicken, BBQ sauce, onions</p>
+          <p class="calories">~ 370 kcal</p>
+          <div class="order-controls">
+            <button onclick="changeQty(this, -1)">-</button>
+            <span class="quantity">0</span>
+            <button onclick="changeQty(this, 1)">+</button>
+          </div>
+          <span class="price">₹ 269</span>
+          <button class="order-btn" onclick="highlightOrder(this)">Order</button>
+        </div>
+        <img src="pictures/bbg chicken.jpg" alt="BBQ Chicken" />
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-info">
+          <h2>Hawaiian</h2>
+          <p>Ham, pineapple, mozzarella</p>
+          <p class="calories">~ 310 kcal</p>
+          <div class="order-controls">
+            <button onclick="changeQty(this, -1)">-</button>
+            <span class="quantity">0</span>
+            <button onclick="changeQty(this, 1)">+</button>
+          </div>
+          <span class="price">₹ 259</span>
+          <button class="order-btn" onclick="highlightOrder(this)">Order</button>
+        </div>
+        <img src="pictures/hawaiian.jpg" alt="Hawaiian" />
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-info">
+          <h2>Mushroom Truffle</h2>
+          <p>Mushroom, truffle oil, mozzarella</p>
+          <p class="calories">~ 340 kcal</p>
+          <div class="order-controls">
+            <button onclick="changeQty(this, -1)">-</button>
+            <span class="quantity">0</span>
+            <button onclick="changeQty(this, 1)">+</button>
+          </div>
+          <span class="price">₹ 289</span>
+          <button class="order-btn" onclick="highlightOrder(this)">Order</button>
+        </div>
+        <img src="pictures/mushroom truffle.jpg" alt="Mushroom Truffle" />
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-info">
+          <h2>Spicy Jalapeno</h2>
+          <p>Jalapenos, red chili flakes, hot sauce</p>
+          <p class="calories">~ 330 kcal</p>
+          <div class="order-controls">
+            <button onclick="changeQty(this, -1)">-</button>
+            <span class="quantity">0</span>
+            <button onclick="changeQty(this, 1)">+</button>
+          </div>
+          <span class="price">₹ 249</span>
+          <button class="order-btn" onclick="highlightOrder(this)">Order</button>
+        </div>
+        <img src="pictures/spicy jalapeno.jpg" alt="Spicy Jalapeno" />
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-info">
+          <h2>Veggie Delight</h2>
+          <p>Onion, tomato, capsicum, corn</p>
+          <p class="calories">~ 290 kcal</p>
+          <div class="order-controls">
+            <button onclick="changeQty(this, -1)">-</button>
+            <span class="quantity">0</span>
+            <button onclick="changeQty(this, 1)">+</button>
+          </div>
+          <span class="price">₹ 219</span>
+          <button class="order-btn" onclick="highlightOrder(this)">Order</button>
+        </div>
+        <img src="pictures/veggie delight.jpg" alt="Veggie Delight" />
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-info">
+          <h2>Meat Lovers</h2>
+          <p>Chicken, sausage, ham, pepperoni</p>
+          <p class="calories">~ 380 kcal</p>
+          <div class="order-controls">
+            <button onclick="changeQty(this, -1)">-</button>
+            <span class="quantity">0</span>
+            <button onclick="changeQty(this, 1)">+</button>
+          </div>
+          <span class="price">₹ 299</span>
+          <button class="order-btn" onclick="highlightOrder(this)">Order</button>
+        </div>
+        <img src="pictures/meat lovers.jpg" alt="Meat Lovers" />
+      </div>
+    </div>
+
+    
+      <!-- 6 beverages here in same format -->
+      <!-- ... (to be continued in next message if needed) -->
+       <h1 style="margin-top: 50px;">Beverages</h1>
+<div class="menu-section">
+  <div class="menu-card">
+    <div class="menu-info">
+      <h2>Coca Cola</h2>
+      <p>Chilled classic Coca Cola</p>
+      <p class="calories">~ 140 kcal</p>
+      <div class="order-controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <span class="quantity">0</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </div>
+      <span class="price">₹ 49</span>
+      <button class="order-btn" onclick="highlightOrder(this)">Order</button>
+    </div>
+    <img src="pictures/coca cola.jpeg" alt="Coca Cola" />
+  </div>
+
+  <div class="menu-card">
+    <div class="menu-info">
+      <h2>Sprite</h2>
+      <p>Lemon-lime flavored soda</p>
+      <p class="calories">~ 140 kcal</p>
+      <div class="order-controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <span class="quantity">0</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </div>
+      <span class="price">₹ 49</span>
+      <button class="order-btn" onclick="highlightOrder(this)">Order</button>
+    </div>
+    <img src="pictures/sprite.jpg" alt="Sprite" />
+  </div>
+
+  <div class="menu-card">
+    <div class="menu-info">
+      <h2>Fanta</h2>
+      <p>Orange flavored soda</p>
+      <p class="calories">~ 160 kcal</p>
+      <div class="order-controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <span class="quantity">0</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </div>
+      <span class="price">₹ 49</span>
+      <button class="order-btn" onclick="highlightOrder(this)">Order</button>
+    </div>
+    <img src="pictures/fanta.jpg" alt="Fanta" />
+  </div>
+
+  <div class="menu-card">
+    <div class="menu-info">
+      <h2>Bisleri</h2>
+      <p>Mineral water bottle 500ml</p>
+      <p class="calories">0 kcal</p>
+      <div class="order-controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <span class="quantity">0</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </div>
+      <span class="price">₹ 20</span>
+      <button class="order-btn" onclick="highlightOrder(this)">Order</button>
+    </div>
+    <img src="pictures/bisleri.jpeg" alt="Bisleri" />
+  </div>
+
+  <div class="menu-card">
+    <div class="menu-info">
+      <h2>Iced Tea</h2>
+      <p>Lemon flavored refreshing iced tea</p>
+      <p class="calories">~ 120 kcal</p>
+      <div class="order-controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <span class="quantity">0</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </div>
+      <span class="price">₹ 59</span>
+      <button class="order-btn" onclick="highlightOrder(this)">Order</button>
+    </div>
+    <img src="pictures/iced tea.jpg" alt="Iced Tea" />
+  </div>
+
+  <div class="menu-card">
+    <div class="menu-info">
+      <h2>Cold Coffee</h2>
+      <p>Chilled coffee with milk and ice</p>
+      <p class="calories">~ 180 kcal</p>
+      <div class="order-controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <span class="quantity">0</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </div>
+      <span class="price">₹ 69</span>
+      <button class="order-btn" onclick="highlightOrder(this)">Order</button>
+    </div>
+    <img src="pictures/cold coffee.jpeg" alt="Cold Coffee" />
+  </div>
+</div>
+  <script src="script1.js"></script>
+</body>
+</html>
